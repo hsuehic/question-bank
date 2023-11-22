@@ -6,18 +6,20 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Current TS CJS File",
+      "name": "Current CJS TS File",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node",
+      "runtimeArgs": ["--transpile-only"],
       "args": ["${relativeFile}"],
       "envFile": "${workspaceFolder}/.env",
       "cwd": "${workspaceRoot}",
       "internalConsoleOptions": "openOnSessionStart",
+      "console": "integratedTerminal",
       "skipFiles": ["<node_internals>/**", "node_modules/**"]
     },
     {
-      "name": "Current TS ESM File",
+      "name": "Current ESM TS File",
       "type": "node",
       "request": "launch",
       "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/ts-node-esm",
