@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ES2020",
+    "target": "ES2020",
+    "outDir": "./dist/mjs",
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+  },
+  "include": [
+    "src/**/*.ts", "test/**/*.spec.ts", "scripts", "packages/*/src/**/*.ts", "packages/*/test/**/*.ts"
+  ]
+}
